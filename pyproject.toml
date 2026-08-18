@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adsl-agents"
+version = "0.3.0"
+description = "Object generation and chat workflows for primitive-based aDSL modeling."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "adsl-core>=0.2.0",
+    "openai>=2.26,<3",
+    "openai-agents==0.20.0",
+    "pydantic>=2.10,<3",
+    "PyYAML>=6.0",
+    "httpx[socks]>=0.27",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+adsl-run = "adsl.agents.cli:main_cli"
+adsl-chat = "adsl.chat.cli:main_cli"
+adsl-chat-run = "adsl.chat.cli:once_cli"
+
+[tool.setuptools]
+packages = [
+    "adsl.agents",
+    "adsl.agents.tools",
+    "adsl.agents.utils",
+    "adsl.chat",
+]
+
+[tool.setuptools.package-dir]
+"adsl.agents" = "adsl-agents"
+"adsl.agents.tools" = "adsl-agents/tools"
+"adsl.agents.utils" = "adsl-agents/utils"
+"adsl.chat" = "adsl-chat"
+
+[tool.setuptools.package-data]
+"adsl.agents" = [
+    "prompt/*.md",
+    "configs/**/*.yaml",
+]

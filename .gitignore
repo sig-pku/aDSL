@@ -1,0 +1,55 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS/editor files
+.DS_Store
+.idea/
+.vscode/
+
+# Build / dist
+build/
+dist/
+*.egg-info/
+
+# Coverage
+.coverage
+coverage.xml
+
+# Project outputs
+data/
+outputs/
+.adsl_state/
+
+# Blender temp/session files
+*.blend1
+*.blend2
+*.blend@*
+
+# Private API Key
+**/**key.txt
+llm_config/keys/
+.env.*
+*.pem
+*.key
+
+# running results
+*.log
+
+# Generated local scene cases
+tests/
+
+# Mesh objects, videos, and URDF outputs
+*.glb
+*.gltf
+*.obj
+*.ply
+*.stl
+*.fbx
+*.mp4
+*.urdf
+
+bpy-renderer

@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adsl-core"
+version = "0.2.0"
+description = "Primitive modeling, relational layout, articulation, and export support for aDSL."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+mesh = [
+    "trimesh",
+    "scikit-image",
+    "yourdfpy",
+]
+render = [
+    "bpy==4.0.0",
+    "bpyrenderer @ git+https://github.com/huanngzh/bpy-renderer.git",
+]
+
+[tool.setuptools]
+packages = [
+    "adsl",
+    "adsl.core",
+    "adsl.core.export",
+    "adsl.core.docs",
+    "adsl.tools",
+]
+
+[tool.setuptools.package-dir]
+"adsl" = "adsl"
+"adsl.core" = "core"
+"adsl.core.export" = "core/export"
+"adsl.core.docs" = "core/docs"
+"adsl.tools" = "tools"
+
+[tool.setuptools.package-data]
+"adsl.core.docs" = ["*.md"]

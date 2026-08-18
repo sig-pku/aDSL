@@ -1,0 +1,12 @@
+provider: openai
+api: responses
+credential:
+  file: ../keys/openrouter_key.txt
+params:
+  base_url: https://openrouter.ai/api/v1
+  model: google/gemini-3.1-pro-preview
+  timeout: 300
+  max_retries: 0
+  max_tokens: 32768
+  parallel_tool_calls: false
+  include_usage: true
