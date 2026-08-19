@@ -156,3 +156,16 @@ adsl-chat --workspace PATH [OPTIONS]
 | `--model-config PATH` | No       | Saved profile or packaged Gemini 3.1 Pro profile | Select the LLM profile YAML file.                                                                                       |
 | `--max-rounds N`      | No       | `2`                                              | Set the maximum number of execute–critic–refine rounds for each asset action initiated from chat. Must be at least `1`. |
 | `-h`, `--help`        | No       | —                                                | Show help for the interactive chat CLI.                                                                                 |
+
+## Citation
+
+If you find this work helpful, please consider citing our paper:
+
+```bibtex
+@article{wang2026adsl,
+  title   = {aDSL: Agentic 3D Creation via Joint Agent-Program Design},
+  author  = {Wang, Rui-Huan and Wei, Si-Tong and He, Jia-Qi and Wei, Heng-Yi and Chen, Baoquan and Wang, Peng-Shuai},
+  journal = {arXiv preprint arXiv:2608.17975},
+  year    = {2026}
+}
+```
