@@ -17,7 +17,7 @@ Heng-Yi Wei, [Baoquan Chen](https://baoquanchen.info/), [Peng-Shuai Wang*](https
 
 2. Clone this repository
     ```bash
-    git clone https://github.com/DylanWRh/aDSL.git
+    git clone https://github.com/sig-pku/aDSL.git
     cd aDSL
     ```
 
