@@ -1,5 +1,7 @@
 # aDSL: Agentic 3D Creation via Joint Agent-Program Design
 
+<a href="http://arxiv.org/abs/2608.17975"><img src='https://img.shields.io/badge/arXiv-Paper-red?logo=arxiv&logoColor=white' alt='arXiv'></a>
+    
 [Rui-Huan Wang](https://dylanwrh.github.io/), [Si-Tong Wei](https://wst2001.github.io/), Jia-Qi He,
 Heng-Yi Wei, [Baoquan Chen](https://baoquanchen.info/), [Peng-Shuai Wang*](https://wang-ps.github.io/)
 
